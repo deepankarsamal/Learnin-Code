@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Display&display=swap');
+
+div {
+    border: 5px black solid;
+    font-size: 30px;
+    font-family: 'Noto Serif Display', serif;
+    padding: 30px;
+    margin: 100px 100px;
+}
+
+h1 {
+    font-size: 30px;
+    font-family: 'Noto Serif Display', serif;
+    padding: 30px;
+    margin: 100px auto;
+    width: fit-content;
+    text-align: center;
+
+}
+
+h1 a {
+    border: 5px black solid;
+    padding: 30px;
+    text-decoration: none;
+    color: black;
+}
+
+a:active {
+    padding: 30px;
+    text-decoration: none;
+    color: white;
+    background: black;
+    
+}
