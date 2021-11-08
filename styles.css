@@ -1,34 +1,58 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Display&display=swap');
-
-div {
-    border: 5px black solid;
-    font-size: 30px;
-    font-family: 'Noto Serif Display', serif;
-    padding: 30px;
-    margin: 100px 100px;
+.heading {
+    margin: 5rem auto;
 }
 
-h1 {
-    font-size: 30px;
-    font-family: 'Noto Serif Display', serif;
-    padding: 30px;
-    margin: 100px auto;
-    width: fit-content;
+.heading .container .row .one-fourth.column {
+    border-bottom: solid pink 0.2rem;
+    border-top: solid black 0.2rem;
+    font-size: large;
+}
+
+.scroll {
     text-align: center;
-
+    padding: 1rem;
+    margin-top: 120%;
+    border-top: solid black 0.2rem;
 }
 
-h1 a {
-    border: 5px black solid;
-    padding: 30px;
-    text-decoration: none;
-    color: black;
+#btn {
+    margin-top: 150%;
 }
 
-a:active {
-    padding: 30px;
-    text-decoration: none;
-    color: white;
-    background: black;
-    
+#text-2 {
+    margin: 50% auto;
+    text-align: center;
+}
+
+/* Animations */
+.slideUp {
+    animation-name: slideUp;
+    -webkit-animation-name: slideUp;
+    animation-duration: 2s;
+    -webkit-animation-duration: 2s;
+    visibility: visible;
+}
+
+@keyframes slideUp {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(70%);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    }
+}
+
+@-webkit-keyframes slideUp {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(70%);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    }
 }
