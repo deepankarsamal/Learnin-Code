@@ -1,13 +1,13 @@
-document.getElementById('btn').addEventListener('click', function() {
-    document.getElementById('text-1').innerHTML = 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis, ducimus!';
-});
+/*document.getElementById('btn').addEventListener('click', function() {
+    document.getElementById('text-1').innerHTML = 'LoL . Clickbait Vmro 🤣';
+});*/
 
 
 window.addEventListener('scroll', function() {
 
     var scroll = document.documentElement.scrollTop;
-    if (scroll > 1000) {
-        document.getElementById('text-2').innerHTML = 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis, ducimus!';
+    if (scroll > 1200) {
+        document.getElementById('text-2').innerHTML = "Not Yet";
         document.getElementById('text-2').className = "slideRight";
     }
 });
@@ -15,11 +15,14 @@ window.addEventListener('scroll', function() {
 window.addEventListener('scroll', function() {
 
     var scroll = document.documentElement.scrollTop;
-    if (scroll > 500) {
+    if (scroll > 800) {
+        document.getElementById('surprise').innerHTML = 'surprise surprise surprise';
         document.getElementById('surprise').className = "surprise";
         
     }
 });
+
+
 
 /*
 document.getElementById('btn').addEventListener('click', function() {
