@@ -15,14 +15,6 @@ window.addEventListener('scroll', function() {
 window.addEventListener('scroll', function() {
 
     var scroll = document.documentElement.scrollTop;
-    if (scroll > 400) {
-        document.getElementById('surprise').className = "slideLeft";
-    }
-});
-
-window.addEventListener('scroll', function() {
-
-    var scroll = document.documentElement.scrollTop;
     if (scroll > 500) {
         document.getElementById('surprise').className = "surprise";
         
