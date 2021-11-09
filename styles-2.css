@@ -182,7 +182,7 @@
 }
 
 .surprise {
-    animation: surprise 2s;
+    animation: surprise 2s infinite;
     animation-timing-function: linear;
     visibility: visible;
 }
