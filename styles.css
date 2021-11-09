@@ -1,11 +1,23 @@
 .heading {
-    margin: 5rem auto;
+    margin: 5rem 1rem;
 }
 
 .heading .container .row .one-fourth.column {
     border-bottom: solid pink 0.2rem;
     border-top: solid black 0.2rem;
-    font-size: large;
+    font-size: 5rem
+}
+
+
+.guide {
+    margin: auto 1rem;
+    font-size: 2rem;
+
+}
+
+.cover {
+    border-inline-start: solid pink 6rem;
+
 }
 
 .scroll {
@@ -15,6 +27,18 @@
     border-top: solid black 0.2rem;
 }
 
+#surprise {
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 800;
+    background: -webkit-linear-gradient(rgb(212, 89, 126), pink);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.5s ease;
+
+}
+
+
 #btn {
     margin-top: 150%;
 }
@@ -23,6 +47,9 @@
     margin: 50% auto;
     text-align: center;
 }
+
+
+
 
 /* Animations */
 .slideUp {
@@ -55,4 +82,156 @@
         opacity: 1;
         -webkit-transform: translateY(0%);
     }
+}
+
+.slideDown {
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    animation-name: slideDown;
+    -webkit-animation-name: slideDown;
+    animation-duration: 2s;
+    -webkit-animation-duration: 2s;
+    visibility: visible;
+}
+
+@keyframes slideDown {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(-70%);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    }
+}
+
+@-webkit-keyframes slideDown {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(-70%);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    }
+}
+
+.slideLeft {
+    animation-name: slideLeft;
+    -webkit-animation-name: slideLeft;
+    animation-duration: 3s;
+    -webkit-animation-duration: 3s;
+    visibility: visible;
+}
+
+@keyframes slideLeft {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateX(-70%);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translateX(0%);
+    }
+}
+
+@-webkit-keyframes slideLeft {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateX(-70%);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translateX(0%);
+    }
+}
+
+.slideRight {
+    animation-name: slideRight;
+    -webkit-animation-name: slideRight;
+    animation-duration: 2s;
+    -webkit-animation-duration: 2s;
+    visibility: visible;
+}
+
+@keyframes slideRight {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateX(70%);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translateX(0%);
+    }
+}
+
+@-webkit-keyframes slideRight {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateX(70%);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translateX(0%);
+    }
+}
+
+.surprise {
+    animation: surprise 2s;
+    animation-timing-function: linear;
+    visibility: visible;
+}
+
+
+
+@keyframes surprise {
+
+    10% {
+        background: -webkit-linear-gradient(rgb(212, 89, 126), #c165f6);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    20% {
+        background: -webkit-linear-gradient(#c165f6, rgb(89, 97, 212));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    30% {
+        background: -webkit-linear-gradient(rgb(89, 97, 212), rgb(89, 173, 212));
+        -webkit-background-clip: text;
+    }
+    
+    40% {
+        background: -webkit-linear-gradient(rgb(89, 173, 212), rgb(89, 97, 212));
+        -webkit-background-clip: text;
+    }
+
+    50% {
+        background: -webkit-linear-gradient(rgb(89, 97, 212), #c165f6);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    60% {
+        background: -webkit-linear-gradient(#c165f6, rgb(212,89,126));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    100% {
+        background: -webkit-linear-gradient(rgb(212,89,126), pink);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        
+    }
+
+
+
 }
