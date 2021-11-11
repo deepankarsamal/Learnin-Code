@@ -7,8 +7,7 @@ window.addEventListener('scroll', function() {
 
     var scroll = document.documentElement.scrollTop;
     if (scroll > 1200) {
-        document.getElementById('text-2').innerHTML = "Not Yet";
-        document.getElementById('text-2').className = "slideRight";
+        document.getElementById('text-2').innerHTML = "Yea Stop.";
     }
 });
 
