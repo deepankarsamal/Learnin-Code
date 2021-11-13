@@ -109,12 +109,9 @@ section:nth-child(3) {
 .slide {
     width: 100vw;
     height: 100vh;
-    scroll-snap-align: start;
 }
 
 .wrapper {
-    scroll-snap-type: y mandatory;
-    scroll-snap-align: start;
     display: flex;
     flex-direction: row;
     width: 400vw;
@@ -132,7 +129,6 @@ section:nth-child(3) {
     position: absolute;
     scrollbar-width: none;
     -ms-overflow-style: none;
-    scroll-snap-type: y mandatory;
 }
 
 ::-webkit-scrollbar {
