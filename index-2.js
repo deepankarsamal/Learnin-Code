@@ -3,24 +3,23 @@
 });*/
 
 
-window.addEventListener('scroll', function() {
+window.addEventListener('scroll', function () {
 
     var scroll = document.documentElement.scrollTop;
-    if (scroll > 1200) {
-        document.getElementById('text-2').innerHTML = "Yea Stop.";
-    }
-});
 
-window.addEventListener('scroll', function() {
-
-    var scroll = document.documentElement.scrollTop;
     if (scroll > 800) {
         document.getElementById('surprise').innerHTML = 'surprise surprise surprise';
         document.getElementById('surprise').className = "surprise";
-        
-    }
-});
 
+    }
+
+    if (scroll > 1900) {
+        document.getElementById('text-2').innerHTML = "A lil' Ahead";
+        document.getElementById('text-2').style.fontSize = "3rem";
+        document.getElementById('text-2').className = "fadeOut";
+    }
+
+});
 
 
 /*
